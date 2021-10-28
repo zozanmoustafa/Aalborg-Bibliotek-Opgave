@@ -1,0 +1,148 @@
+/* Nav */
+
+.topnav{
+    background-color: burlywood;
+    overflow: hidden;
+}
+/* links inside navigation bar */
+.topnav a{
+    float: left;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+/*color of links on hover*/
+.topnav a:hover {
+    background-color: #ddd;
+    color:black;
+}
+/*color to active link*/
+.topnav a.active {
+    background-color: burlywood;
+    color: white;
+}
+
+/* 1 dele */
+#dele-1 {
+    margin: 80px;
+    max-width: 1600px;
+    border: 15px solid rgb(68, 33, 4);
+    padding: 15px;
+}
+#dele-1 h1{
+    font-size: 25px;
+    font-weight: 70 bold;
+    color: #333;
+}
+#dele-1 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+#dele-1 img:hover {
+    opacity: 0.4;
+}
+
+/* 2 dele */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    border: 15px solid rgb(68, 33, 4);
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.row {
+    display: flex;
+}
+.column{
+    flex: 33.33%;
+    padding: 5px;
+}
+.column:hover {
+    opacity: 0.4;
+}
+
+/* 3 dele */
+#dele-3 {
+    border: 20px solid rgb(68, 33, 4);
+}
+#dele-3 h2{
+    position: relative;
+    left: 20px;
+}
+#dele-3 p{
+    position: relative;
+    left: 20px;
+}
+
+/* footer */
+/***** slutning af forsiden ********/
+
+#grid {
+    margin: 60px;
+    max-width: 1600px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 100%;
+    color: #333;
+    background-color: #eaeaea;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: minmax(250px, 600px) minmax(250px, 600px) minmax(250px, 600px) minmax(250px, 600px);
+    grid-template-areas:
+    "box1 box2"
+    "box3 box4"
+    "box5 box6"
+    "box7 box8";
+}
+#grid p {
+    padding: 15px;
+    text-align: justify;
+}
+#grid h2 {
+    padding: 15px;
+    color: #be1212;
+  }
+  
+  #grid img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  #box1 {
+    grid-area: box1;
+  }
+  
+  #box2 {
+    grid-area: box2;
+  }
+  
+  #box3 {
+    grid-area: box4;
+  }
+  #box4 {
+    grid-area: box3;
+  }
+  
+  #box5 {
+    grid-area: box5;
+  }
+  
+  #box6 {
+    grid-area: box6;
+  }
+  #box7 {
+    grid-area: box5;
+  }
+  
+  #box8 {
+    grid-area: box6;
+  } 
